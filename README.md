@@ -35,9 +35,18 @@ Use cabal-install and sandboxes:
 
 `.cabal-sandbox/bin/haskell-scheme-interpreter`
 
+## Generate haddock documentation:
+`cabal haddock`
+
+## Install additional package:
+`cabal install [package name]`
+
 ## Project structure:
-- Haq.hs - the main haskell source file
-- haq.cabal - the cabal build description
+- src/Main.hs - the main haskell source file
+- haskell-scheme-interpreter.cabal - the cabal build description
+- Setup.hs
+- cabal.sandbox.config (only with Sandbox)
+- ChangeLog.md - change log
 - README - info
 - LICENSE - license
 
@@ -48,8 +57,13 @@ Use cabal-install and sandboxes:
 - Haddok for generating documentation from annotated Haskell source code
 - Testing: HSpec (spec testing), HUnit (unit testing)
 - Distribution: Hackage
+- Lint: HLint package
+
+## Libraries:
+- Parsec
 
 ## Resources:
+- Lisp documentation: http://lisp-lang.org/
 - Scheme Language Standard: http://www.schemers.org/Documents/Standards/R5RS/HTML/
 - Haskell documentation: https://www.haskell.org/documentation
 - Cabal User Guide: http://www.haskell.org/cabal/users-guide/
@@ -57,3 +71,4 @@ Use cabal-install and sandboxes:
 - HSpec: http://hspec.github.io/
 - HUnit: http://hackage.haskell.org/package/HUnit
 - Hackage: http://hackage.haskell.org/packages/hackage.html
+- Parsec: https://wiki.haskell.org/Parsec
