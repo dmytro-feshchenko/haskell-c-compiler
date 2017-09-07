@@ -24,13 +24,16 @@ Clone the repository:
 
 `git clone https://github.com/technoboom/haskell-scheme-interpreter`.
 
-Build binary with GHC:
+## Build the project:
+Use cabal-install and sandboxes:
 
-`ghc -o scheme_interpreter --make Haq.hs`
+`cabal sandbox init`
 
-Run the binary:
+`cabal install -j`
 
-`./scheme_interpreter`
+## Run the project:
+
+`.cabal-sandbox/bin/haskell-scheme-interpreter`
 
 ## Project structure:
 - Haq.hs - the main haskell source file
