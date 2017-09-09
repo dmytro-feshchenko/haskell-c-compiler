@@ -40,6 +40,8 @@ Let's suppose your project defines an executable called my-executable. How do yo
 
 1. `stack exec my-executable` will modify your `PATH` variable to include a number of additional directories, including the internal executable destination, and your build tools (like ghc).
 
+Example: `stack exec haskell-c-compiler-exe`
+
 2. `stack exec which my-executable` will use the `which` command to find the full path to your executable, which you could then run, without the additional modifications that `stack exec` implies. If you want to be clever, you could do something like this from your shell:
 
 `$ $(stack exec which my-executable)`
