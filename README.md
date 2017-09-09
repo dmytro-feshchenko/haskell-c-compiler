@@ -4,12 +4,8 @@ languages (such as JavaScript, Java, Go, C#).
 
 This project embodies my curiosity to Haskell programming language. Haskell is
 different from any other programming languages. And it requires thinking differently.
-It's very interesting to learn ML ('Meta language' - programming language). This
-interest populates to all descendants of the language.
 
-I'm going to design and build an awesome interpreter for Scheme language.
-Scheme is a statically scoped and properly tail-recursive dialect of the Lisp
-programming language invented by Guy Lewis Steele Jr. and Gerald Jay Sussman.
+I'm going to design and build an awesome compiler for C language.
 
 ## Prerequisites:
 To get this build and run you should install Haskell programming language and
